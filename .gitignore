@@ -1,0 +1,5 @@
+.DS_Store
+.nvim-cache/
+.nvim-data/
+.nvim-state/
+nvim.log

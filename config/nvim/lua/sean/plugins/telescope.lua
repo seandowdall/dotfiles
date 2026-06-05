@@ -42,34 +42,8 @@ return {
       pcall(telescope.load_extension, "fzf")
       pcall(telescope.load_extension, "ui-select")
 
-      vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Find help" })
-      vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Find keymaps" })
       vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
-      vim.keymap.set("n", "<leader>ft", builtin.builtin, { desc = "Find Telescope pickers" })
-      vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "Find current word" })
       vim.keymap.set("n", "<leader>fs", builtin.live_grep, { desc = "Find string" })
-      vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Find diagnostics" })
-      vim.keymap.set("n", "<leader>fr", builtin.resume, { desc = "Find resume" })
-      vim.keymap.set("n", "<leader>f.", builtin.oldfiles, { desc = "Find recent files" })
-      vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "Find buffers" })
-
-      vim.keymap.set("n", "<leader>/", function()
-        builtin.current_buffer_fuzzy_find(themes.get_dropdown({
-          winblend = 10,
-          previewer = false,
-        }))
-      end, { desc = "Search current buffer" })
-
-      vim.keymap.set("n", "<leader>f/", function()
-        builtin.live_grep({
-          grep_open_files = true,
-          prompt_title = "Live Grep in Open Files",
-        })
-      end, { desc = "Find in open files" })
-
-      vim.keymap.set("n", "<leader>fn", function()
-        builtin.find_files({ cwd = vim.fn.stdpath("config") })
-      end, { desc = "Find Neovim files" })
     end,
   },
 }

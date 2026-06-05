@@ -2,7 +2,8 @@
 # Reference: https://ghostty.org/docs/config/reference
 
 theme = TokyoNight Storm
-font-size = 16
+font-size = 19
 window-padding-x = 8
 window-padding-y = 8
-macos-option-as-alt = true
+macos-option-as-alt = false
+keybind = shift+enter=csi:13;2u

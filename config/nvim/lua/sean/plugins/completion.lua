@@ -21,9 +21,6 @@ return {
       keymap = {
         preset = "default",
       },
-      appearance = {
-        nerd_font_variant = "mono",
-      },
       completion = {
         documentation = {
           auto_show = true,
@@ -43,7 +40,7 @@ return {
         preset = "luasnip",
       },
       fuzzy = {
-        implementation = "lua",
+        implementation = "rust",
       },
       signature = {
         enabled = true,

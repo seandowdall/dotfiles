@@ -22,3 +22,14 @@ opt.clipboard = "unnamedplus"
 opt.splitbelow = true
 opt.splitright = true
 opt.undofile = true
+
+vim.opt.formatoptions:remove({ "c", "r", "o" })
+
+vim.opt.mouse = "a"
+vim.opt.showmode = false
+vim.opt.breakindent = true
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 300
+vim.opt.inccommand = "split"
+vim.opt.scrolloff = 10
+vim.opt.confirm = true

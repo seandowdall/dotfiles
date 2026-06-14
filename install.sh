@@ -53,3 +53,7 @@ link_path \
 link_path \
   "$DOTFILES_DIR/config/nvim" \
   "$HOME/.config/nvim"
+
+if [[ -x "$TPM_DIR/bin/install_plugins" ]]; then
+  "$TPM_DIR/bin/install_plugins"
+fi
